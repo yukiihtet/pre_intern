@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Responsive!</title>
+    <style>
+        @media print{
+        .screenonly{
+            display: none;
+        }
+        }
+        @media(min-width: 600px){
+            p{
+                background-color: blueviolet;
+            }
+        }
+        @media(max-width: 599px)
+        {
+            
+        p{
+            background-color: chartreuse;
+        }
+            
+        
+        }
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .container>div{
+            font-size: 15px;
+            background-color: rebeccapurple;
+            width: 200px;
+            padding: 20px;
+            margin: 20px;
+        } 
+        .con{
+            display: grid;
+            padding: 20px;
+            grid-row-gap: 20px;
+            grid-column-gap: 20px;
+            grid-template-columns: 200px 200px 200px auto;
+        }
+        .grideitem{
+            background-color: seagreen;
+            text-align: center;
+        }
+        
+    
+        
+    </style>
+</head>
+<body>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est possimus quod incidunt dolore aliquam natus iure non quaerat soluta placeat, cupiditate quam id ipsam nisi asperiores itaque! Assumenda, eaque! Ab.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat ipsam blanditiis error magni adipisci temporibus. Pariatur ex, voluptates reiciendis soluta fugiat voluptas minus expedita harum modi? Voluptas non sapiente nesciunt.</p>
+        <p class="screenonly">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum dignissimos ex magni animi quos omnis impedit neque recusandae modi natus maxime, distinctio tenetur nisi blanditiis inventore quod dolores nemo officiis?</p>
+    </div>
+    <div class="container">
+        <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio quibusdam culpa qui autem saepe nihil in et voluptate libero earum rem iure blanditiis accusantium distinctio accusamus, fugit fugiat explicabo consequuntur.</div>
+        <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore suscipit id nam cum. Repudiandae autem praesentium cum molestiae velit, possimus laborum deleniti ex neque commodi, quod dolor, explicabo excepturi! Nemo!</div>
+        <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas enim maiores nam. Ipsa nihil aliquam culpa, ullam numquam nostrum nisi ab? Iusto sequi expedita aspernatur ut quae adipisci odit porro.</div>
+        <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi reprehenderit quia expedita ut recusandae quae, perferendis inventore exercitationem eum in, error suscipit cum esse hic dolores voluptas nam veniam? Suscipit.</div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe provident, cum earum eius est ut sit? Sunt iste quas at expedita doloremque architecto aspernatur unde placeat, consequatur possimus voluptas minima!</div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ipsum nesciunt quaerat, mollitia eum quae distinctio! Recusandae explicabo voluptates officiis veritatis magnam, provident earum enim voluptas, sapiente, blanditiis dolore eaque!</div>
+        <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus dicta accusamus assumenda. Sit, ex cum quia officia et architecto placeat vitae unde quasi, provident quis recusandae animi ipsa laboriosam voluptatum.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio nostrum cumque temporibus ex, sit accusantium eius saepe omnis delectus nisi placeat corrupti error necessitatibus repudiandae cupiditate a in, asperiores itaque!</div>
+        <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor saepe possimus placeat accusantium quos praesentium alias aperiam? Omnis cum ipsa nisi molestiae nulla placeat tenetur ducimus, fugit asperiores a inventore.</div>
+        <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem voluptas alias maiores quidem sit obcaecati laboriosam sed unde, accusamus, quam hic culpa nihil quia molestiae. Tenetur dicta eum non nulla.</div>
+    </div>
+    <div class="con">
+        <div class="grideitem">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio quibusdam culpa qui autem saepe nihil in et voluptate libero earum rem iure blanditiis accusantium distinctio accusamus, fugit fugiat explicabo consequuntur.</div>
+        <div class="grideitem">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore suscipit id nam cum. Repudiandae autem praesentium cum molestiae velit, possimus laborum deleniti ex neque commodi, quod dolor, explicabo excepturi! Nemo!</div>
+        <div class="grideitem">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas enim maiores nam. Ipsa nihil aliquam culpa, ullam numquam nostrum nisi ab? Iusto sequi expedita aspernatur ut quae adipisci odit porro.</div>
+        <div class="grideitem">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi reprehenderit quia expedita ut recusandae quae, perferendis inventore exercitationem eum in, error suscipit cum esse hic dolores voluptas nam veniam? Suscipit.</div>
+        <div class="grideitem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe provident, cum earum eius est ut sit? Sunt iste quas at expedita doloremque architecto aspernatur unde placeat, consequatur possimus voluptas minima!</div>
+        <div class="grideitem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ipsum nesciunt quaerat, mollitia eum quae distinctio! Recusandae explicabo voluptates officiis veritatis magnam, provident earum enim voluptas, sapiente, blanditiis dolore eaque!</div>
+        <div class="grideitem">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus dicta accusamus assumenda. Sit, ex cum quia officia et architecto placeat vitae unde quasi, provident quis recusandae animi ipsa laboriosam voluptatum.</div>
+        <div class="grideitem">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio nostrum cumque temporibus ex, sit accusantium eius saepe omnis delectus nisi placeat corrupti error necessitatibus repudiandae cupiditate a in, asperiores itaque!</div>
+        
+    </div>
+</body>
+</html>
